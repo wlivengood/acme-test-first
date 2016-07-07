@@ -78,7 +78,7 @@ describe('AcmeDb', function(){
       moe = acmeDb.getEmployee(5);
     });
 
-    it('groups employees by the first letter of their first name', function(){
+    it('groups employees by the first letter of their name', function(){
       expect(acmeDb.groupedEmployees().m.length).to.equal(2);
       expect(acmeDb.groupedEmployees().l.length).to.equal(1);
     });
